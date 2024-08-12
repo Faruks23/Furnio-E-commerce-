@@ -6,3 +6,13 @@
 .Container{
   @apply container mx-auto
 }
+
+.browse-card{
+  @apply overflow-hidden
+}
+.browse-card-h2{
+  @apply text-[24px]  py-[20px] text-center font-semibold text-[#333333]
+}
+.browse-card-image{
+  @apply hover:scale-105 duration-300 cursor-pointer
+}
