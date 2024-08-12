@@ -30,7 +30,7 @@ const NavList = () => {
  
 
   return (
-    <ul>
+    <ul className=' flex  items-center gap-8 font-semibold '>
       {
         List.map(list => {
           return <>
