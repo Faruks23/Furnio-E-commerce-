@@ -3,7 +3,7 @@ import React from 'react';
 
 const Browses = () => {
   return (
-    <div className=' mt-20'>
+    <div className=' mt-20  px-3 md:px-0'>
 
       <div className="title text-center">
         <h2 className='text-3xl font-bold text-[rgb(51,51,51)]'>Browse The Range</h2>
