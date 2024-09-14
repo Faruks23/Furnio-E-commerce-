@@ -106,6 +106,10 @@ const Product = () => {
          
        
       </div>
+
+      <div className=' flex justify-center mt-8'>
+        <button className='w-[245px] text-center h-12 border border-[#B88E2F]  py-3 px-16 text-[#B88E2F]  hover:bg-orange-500 duration-300 hover:text-white '>Show More</button>
+      </div>
     </div>
   );
 };
