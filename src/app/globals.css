@@ -2,17 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.Container{
-  @apply container mx-auto px-3 md:px-0
+.Container {
+  @apply container mx-auto px-3 md:px-0;
 }
 
-.browse-card{
-  @apply overflow-hidden
+.browse-card {
+  @apply overflow-hidden;
 }
-.browse-card-h2{
-  @apply text-[24px]  py-[20px] text-center font-semibold text-[#333333]
+.browse-card-h2 {
+  @apply text-[24px]  py-[20px] text-center font-semibold text-[#333333];
 }
-.browse-card-image{
-  @apply hover:scale-105 duration-300 cursor-pointer
+.browse-card-image {
+  @apply hover:scale-105 duration-300 cursor-pointer;
 }
+
+.masonry {
+  display: grid;
+  grid-column-gap: 24px;
+  align-items: start;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.masonry img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  vertical-align: middle;
+  position: relative;
+
+}
+
+.grid-col{
+  
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 24px;
+}
+.banner{
+  background-image: url('/banner.png');
+}
+

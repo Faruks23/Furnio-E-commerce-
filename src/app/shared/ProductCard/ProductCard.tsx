@@ -3,7 +3,7 @@ import { FaShoppingCart, FaShareAlt, FaHeart, FaExchangeAlt } from 'react-icons/
 
 export default function ProductCard({ item }:any) {
   return (
-    <div className='relative h-[445px] w-full max-w-[285px] border group'>
+    <div className='relative h-[445px] w-full max-w-[285px] border group transition-all duration-300'>
       {/* Product Image */}
       <Image src={item.image} width={285} height={300} alt='product-image' className=' h-[300px]' />
 
