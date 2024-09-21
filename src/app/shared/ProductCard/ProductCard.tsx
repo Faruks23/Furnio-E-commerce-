@@ -1,7 +1,8 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { FaShoppingCart, FaShareAlt, FaHeart, FaExchangeAlt } from 'react-icons/fa';
 
-export default function ProductCard({ item }:any) {
+export default function ProductCard({ item }: any) {
   return (
     <div className='relative h-[445px] w-full max-w-[285px] border group transition-all duration-300'>
       {/* Product Image */}
@@ -12,7 +13,7 @@ export default function ProductCard({ item }:any) {
         <h1 className='text-[24px] font-semibold'>{item.name}</h1>
         <p className='text-[#898989] font-medium'>{item.subName}</p>
         <p className='text-[20px] font-semibold'>
-          Rp {item.price} 
+          Rp {item.price}
           <br className=' block md:hidden' />
           {item.mainPrice && <span className='ml-2 text-[#B0B0B0] font-normal text-base'>Rp {item?.mainPrice}</span>}
         </p>
@@ -32,7 +33,12 @@ export default function ProductCard({ item }:any) {
           <FaHeart className="hover:text-gray-300 cursor-pointer" />
         </div>
 
-        
+        <Link   href={`/shop/productDetails/${item.id}`} >  <button className="bg-[#FFFFFF] text-[#B88E2F] py-2 px-4 rounded ">
+          <FaShoppingCart className="inline mr-2" /> View Details
+        </button>
+        </Link>
+
+
 
       </div>
       {item.status === 'New' && <>

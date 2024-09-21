@@ -8,7 +8,7 @@ const ShopPage = () => {
   return (
     <div className='pt-16'>
       <Banner title='Shop'></Banner>
-      <AllProduct></AllProduct>
+    
       <PaginatedItems itemsPerPage={16} ></PaginatedItems>
       <Step></Step>
        
